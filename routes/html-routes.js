@@ -1,7 +1,7 @@
 const path = require("path");
 const router = require("express").Router();
 
-router.get("/exercise", (req, res) => {
+router.get("/fitness", (req, res) => {
     res.sendFile(path.join(_dirname, "../public/exercise.html"))
 });
 
