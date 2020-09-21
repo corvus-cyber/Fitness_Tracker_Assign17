@@ -26,10 +26,6 @@ const workoutSchema = new Schema({
             required: "State how long this exercise occured"
         },
         //these were written out as used by either one form or the other, will not have them be required
-        //The remaining variable for the cardio form
-        distance: {
-            type: Number
-        },
         //The remaining variables for the resistence form
         weight: {
             type: Number
@@ -38,6 +34,10 @@ const workoutSchema = new Schema({
             type: Number
         },
         sets: {
+            type: Number
+        },
+        //The remaining variable for the cardio form
+        distance: {
             type: Number
         }
 
