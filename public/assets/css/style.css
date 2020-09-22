@@ -425,6 +425,11 @@ form > button {
   padding: 10px;
 }
 
+.float-right { 
+  float: right;
+} 
+
+
 @keyframes toast {
   50% {
     opacity: 1;
