@@ -21,9 +21,17 @@ router.put("/api/workouts/:id", (req, res) =>{
 //Presents stats to the user on the index.html
 router.get("/api/workouts", (req, res) =>{
     Workout.find({})
-    .then(workoutDataBase =>{
-        res.json(workoutDataBase)
-    })
+    .then(workoutDataBase => {
+        //This bit of code was made possible by fellow student Yakini, who explained that in order for the total duration to function we'd need to create a for loop
+        workoutDataBase.forEach(totalWorkoutTime => {
+          var totalTime =0 ;
+          totalWorkoutTime.exercises.forEach(exercises => {
+           totalTime += exercises.duration;
+          })
+          totalWorkoutTime.totalDuration = totalTime;
+        })
+        res.json(workoutDataBase);
+      })
 });
 
 //This establishes the route so that we can see data within the stats.html page
