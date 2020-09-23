@@ -3,10 +3,12 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const workoutSchema = new Schema({
+    //This will hold the date for the workout
     day: {
         type: Date, 
-        default: new Date
+        default: Date.now
     },
+    //This will hold the total duration which will be crafted via for loop in the api-routes file
     totalDuration: {
         type: Number,
         default: 0
