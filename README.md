@@ -33,7 +33,7 @@ Upon logging onto the website, the user will be able to enter their workout, man
 There is a persisting issue that needs to be resolved, but thankfully the problem was not of my own doing. Instructor Jonathan noted that the dashboard (which was created by the school and we should not have to fix ourselves) does not function properly even with his master file. While it displays the information from the database to the dashboard thanks to my efforts in the api-routes file, whoever wrote it set it up incorrectly so that it does not properly display the workouts on the correct days (even though when checking api/workouts/range on the localhost we can see that they have the proper dates.) Please keep this in mind when grading as the instructor himself said that this was a persisting issue even with the solved file. 
 
 # Link:
-
+[Deployed Website](https://fitness-tracker-u-of-u.herokuapp.com/)
 # Screenshots:
 ![screenshot of main](./screenshots/main.png)
 ![screenshot of resistance options](./screenshots/resistance.png)
